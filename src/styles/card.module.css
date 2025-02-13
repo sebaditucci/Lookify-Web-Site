@@ -1,0 +1,31 @@
+.card {
+    cursor: pointer;
+}
+
+.card:hover .img {
+    transform: scale(0.9);
+}
+
+.card:hover .datos {
+    color: #00a;
+} 
+
+.imgContainer {
+    background-color: #eee;
+    padding: 10px;
+    width: fit-content;
+}
+
+.img {
+    width: 250px;
+    height: 250px;
+    object-fit:contain;
+    transition-duration: 0.3s;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}

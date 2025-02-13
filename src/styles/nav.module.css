@@ -1,0 +1,58 @@
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 #000;
+}
+
+.logo {
+    width: 155px;
+    height: 45px;
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.boton, .botonGoogle {
+    border: none;
+    padding: 10px;
+    background: none;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.botonGoogle {
+    font-size: 20px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+}
+
+.botonGoogle:hover {
+    background-color: #00a;
+    color: white;
+}
+
+.boton:hover::before {
+    width: 100%;
+}
+
+.boton::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #00a;
+    transition: width 0.3s ease
+}
+

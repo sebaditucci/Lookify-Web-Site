@@ -1,0 +1,40 @@
+.section {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.carrusel {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #00a;
+    color: white;
+}
+
+.titulo {
+    color: #00a;
+}
+
+.subtitulo {
+    font-style: italic;
+}
