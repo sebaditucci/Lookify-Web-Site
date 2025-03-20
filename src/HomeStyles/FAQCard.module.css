@@ -1,0 +1,62 @@
+.container {
+    perspective: 1000px;
+}
+
+.faqCard {
+    height: 20vw;
+    width: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    transition: transform 1s;
+    box-shadow: 0 0 10px 0 var(--color-terciario);
+}
+
+.container:hover .faqCard{
+    transform: rotateY(180deg);
+}
+
+.dorso {
+    transform: rotateY(180deg);
+    background-color: var(--color-cuaternario);
+    border-radius: 20px;
+}
+
+.frente {
+    background-image: url("../assets/card_background.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.frente, .dorso {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    text-align: center;
+    padding: 20px;
+}
+
+.icono, .pregunta {
+    color: var(--color-primario);
+}
+
+.icono {
+    font-size: var(--mediano-3);
+}
+
+.pregunta {
+    font-size: var(--mediano);
+}
+
+.respuesta {
+    font-size: var(--chico);
+}
+
+@media screen and (max-width: 980px) {
+    
+}

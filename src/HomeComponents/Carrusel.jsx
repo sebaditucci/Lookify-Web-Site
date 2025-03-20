@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import styles from '../styles/carrusel.module.css';
-import Card from './Card';
+import styles from '../HomeStyles/carrusel.module.css';
+import Producto from './ProductoCard';
 
 
 export default function Carrusel({productos, prevRef, nextRef}) {
@@ -12,17 +12,22 @@ export default function Carrusel({productos, prevRef, nextRef}) {
     <Swiper
     modules={[Navigation]}
       spaceBetween={0}
-      slidesPerView={4}
+    
       navigation={{
         prevEl: prevRef.current,
         nextEl: nextRef.current,
+      }}
+      breakpoints={{
+        50: {slidesPerView: 3},
+        700: { slidesPerView: 4 },
+        1000: { slidesPerView: 5 }
       }}
       className = {styles.carrusel}
     >
         {
             productos.map(prod => (
                 <SwiperSlide key = {prod.id}>
-                    <Card imagen = {prod.img} nombre = {prod.nombre} precio = {prod.precio}/>
+                    <Producto imagen = {`/public/imagenes${prod.img}`} nombre = {prod.nombre} precio = {prod.precio}/>
                 </SwiperSlide>
             ))
         }

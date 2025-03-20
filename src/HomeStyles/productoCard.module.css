@@ -7,18 +7,18 @@
 }
 
 .card:hover .datos {
-    color: #00a;
+    color: var(--color-primario);
 } 
 
 .imgContainer {
-    background-color: #eee;
+    background-color: var(--color-cuaternario);
     padding: 10px;
     width: fit-content;
 }
 
 .img {
-    width: 250px;
-    height: 250px;
+    width: max(5.5rem, 10vw);
+    height: max(5.5rem, 10vw);
     object-fit:contain;
     transition-duration: 0.3s;
 }
@@ -28,4 +28,5 @@
     flex-direction: column;
     gap: 5px;
     margin-top: 10px;
+    font-size: var(--chico);
 }

@@ -1,8 +1,0 @@
-[
-    { "id": 1, "nombre": "Remera Negra", "precio": 5000, "img": "/public/imagenes/remera.png", "clase": "tendencia"},
-    { "id": 2, "nombre": "Jeans Claros", "precio": 12000, "img": "/public/imagenes/jeans.png", "clase": "tendencia"},
-    { "id": 3, "nombre": "Zapatillas Nike", "precio": 30000, "img": "/public/imagenes/zapatillas.png", "clase": "tendencia" },
-    { "id": 4, "nombre": "Buzo Blanco", "precio": 18000, "img": "/public/imagenes/buzo.png", "clase": "tendencia"},
-    { "id": 5, "nombre": "Medias Ralladas", "precio": 9000, "img": "/public/imagenes/medias.png", "clase": "tendencia" },
-    { "id": 6, "nombre": "Campera de Abrigo", "precio": 25000, "img": "/public/imagenes/campera.png", "clase": "tendencia"}
-]

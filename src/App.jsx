@@ -1,14 +1,10 @@
 import React from 'react'
-import Nav from './components/Nav'
-import Header from './components/header'
-import Content from './components/Content'
+import Home from './Pages/Home'
 
 export default function App() {
   return (
     <div>
-      <Nav/>
-      <Header/>
-      <Content/>
+      <Home/>
     </div>
   )
 }

@@ -2,9 +2,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "montserrat-light";
+  font-family: "montserrat";
 }
 
-h1,h2,p,button {
-  font-family: "montserrat";
+:root {
+  --color-primario: #00a;
+  --color-secundario: #fff;
+  --color-terciario: #000;
+  --color-cuaternario: #eee;
+  --color-quinario: #002;
+  --chico: max(0.6rem, 1vw);
+  --chico-2: max(0.7rem, 1.2vw);
+  --mediano: max(0.9rem, 1.3vw);
+  --mediano-2: max(0.9rem, 1.5vw);
+  --mediano-3: max(0.9rem, 2vw);
+  --grande : max(1.3rem, 3vw);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  font-family: "montserrat-light";
 }

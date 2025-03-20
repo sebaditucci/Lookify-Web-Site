@@ -1,0 +1,58 @@
+.oferta {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-image: url("../assets/fondoOferta.jpg");
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.texto {
+    line-height: 45px;
+    color: var(--color-secundario);
+    font-size: var(--chico);
+}
+
+.titulo {
+    font-size: var(--mediano-3);
+    margin-bottom: 10px;
+}
+
+.imagen {
+    width: 30vw;
+    height: 25vw
+}
+
+.button {
+    background: none;
+    border: solid var(--color-secundario) 1px;
+    color: var(--color-secundario);
+    padding: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-quinario);
+}
+
+@media screen and (max-width: 980px) {
+    .textoHidden {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .titulo {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}

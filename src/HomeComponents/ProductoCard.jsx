@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from '../styles/card.module.css'
+import styles from '../HomeStyles/productoCard.module.css'
 
-export default function Card({imagen, nombre, precio}) {
+export default function ProductoCard({imagen, nombre, precio}) {
   return (
     <div className = {styles.card}>
         <div className = {styles.imgContainer}>
-            <img src = {imagen} alt = {nombre} title = {nombre} className = {styles.img}/>
+            <img src = {imagen} alt = {nombre} title = {nombre} loading = "lazy" className = {styles.img}/>
         </div>
         <div className = {styles.datos}>
         <h4>{nombre}</h4>

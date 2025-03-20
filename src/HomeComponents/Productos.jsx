@@ -1,15 +1,15 @@
 import {React, useState, useEffect, useRef} from 'react'
-import styles from '../styles/section.module.css'
+import styles from '../HomeStyles/productos.module.css'
 import Carrusel from './Carrusel';
 
-export default function Section({titulo, subtitulo, clase}) {
+export default function Productos({titulo, subtitulo, clase}) {
     const [productos, setProductos] = useState([]);
 
     const prevButtonRef = useRef(null);
     const nextButtonRef = useRef(null);
 
     useEffect(() => {
-        fetch('/data.json')
+        fetch('/imagenesData.json')
         .then((response) => response.json())
         .then((data) => setProductos(data));
     },[])

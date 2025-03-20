@@ -1,0 +1,11 @@
+.carrusel {
+    width: 80%;
+    margin: 0;
+    padding-left: 55px;
+}
+
+@media screen and (max-width: 500px) {
+    .carrusel {
+        padding-left: 0px;
+    }
+}

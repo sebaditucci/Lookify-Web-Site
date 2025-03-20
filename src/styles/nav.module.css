@@ -1,13 +1,17 @@
-nav {
+.nav {
     position: sticky;
     top: 0;
+    z-index: 10;
+}
+
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: var(--color-secundario);
     z-index: 10;
     padding: 10px;
-    box-shadow: 0 0 10px 0 #000;
+    box-shadow: 0 0 10px 0 var(--color-terciario);
 }
 
 .logo {
@@ -15,17 +19,38 @@ nav {
     height: 45px;
 }
 
+.menuButton {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--color-primario);
+    cursor: pointer;
+}
+
 .lista {
-    list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.boton, .botonGoogle {
+.upperLista, .lista, .menuLista {
+    list-style: none;
+}
+
+.menuLista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-delay: 0.2s;
+}
+
+.botonMenu {
+    color: var(--color-secundario);
+}
+
+.boton, .botonGoogle, .upperButtons, .menuButton, .botonMenu {
     border: none;
     padding: 10px;
     background: none;
-    font-size: 15px;
     cursor: pointer;
     position: relative;
 }
@@ -37,8 +62,8 @@ nav {
 }
 
 .botonGoogle:hover {
-    background-color: #00a;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 .boton:hover::before {
@@ -51,8 +76,47 @@ nav {
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px; 
-    background-color: #00a;
+    height: 2.5px; 
+    background-color: var(--color-primario);
     transition: width 0.3s ease
 }
 
+.upperMenu {
+    display: none;
+    padding: 5px;
+    background-color: var(--color-quinario);
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+}
+
+.upperButtons {
+    padding: 5px 0;
+    color: var(--color-secundario);
+}
+
+.upperButtons:hover {
+    text-shadow: 0 0 5px var(--color-secundario);
+}
+
+.menuContainer {
+    width: 100%;
+    z-index: 10;
+    background-color: var(--color-terciario);
+    transition: height 0.5s ease;
+}
+
+@media screen and (max-width: 980px) {
+    .lista {
+        display: none;
+    }
+    .upperMenu, .upperLista {
+        display: flex;
+    }
+    .upperLista {
+        gap: 10px;
+    }
+    .menuButton {
+        display:inline-block;
+    }
+}
