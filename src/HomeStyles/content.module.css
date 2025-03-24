@@ -1,0 +1,6 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+    margin: 6vw 0;
+}
