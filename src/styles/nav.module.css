@@ -101,9 +101,14 @@
 
 .menuContainer {
     width: 100%;
-    z-index: 10;
     background-color: var(--color-terciario);
     transition: height 0.5s ease;
+    display: none;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-terciario);
 }
 
 @media screen and (max-width: 980px) {

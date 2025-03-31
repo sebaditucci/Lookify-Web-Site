@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from '../HomeStyles/productoCard.module.css'
+import styles from '../styles/productoCard.module.css'
 
-export default function ProductoCard({imagen, nombre, precio}) {
+export default function ProductoCard({imagen, nombre, precio, visibility}) {
   return (
-    <div className = {styles.card}>
+    <div className = {styles[visibility]}>
         <div className = {styles.imgContainer}>
             <img src = {imagen} alt = {nombre} title = {nombre} loading = "lazy" className = {styles.img}/>
         </div>

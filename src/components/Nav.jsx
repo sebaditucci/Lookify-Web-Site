@@ -1,6 +1,7 @@
 import {React, useState} from 'react'
 import styles from '../Styles/nav.module.css'
 import logo from '../assets/logo.png'
+import { NavLink } from 'react-router-dom'
 
 export default function Nav() {
   const [estado, setEstado] = useState(false)
@@ -22,8 +23,8 @@ export default function Nav() {
         <img src = {logo} title = "Lookify" alt = "logo de Lookify" className = {styles.logo}/>
         <button className = {`material-icons ${styles.menuButton}`} onClick={() => setEstado(!estado)}>menu</button>
         <ul className = {styles.lista}>
-          <li><button className = {styles.boton}>Home</button></li>
-          <li><button className = {styles.boton}>Productos</button></li>
+          <li><button className = {styles.boton}><NavLink className = {styles.link} to = '/'>Home</NavLink></button></li>
+          <li><button className = {styles.boton}><NavLink className = {styles.link} to = '/productos'>Productos</NavLink></button></li>
           <li><button className = {styles.boton}>Sobre Nosotros</button></li>
           <li><button className = {styles.boton}>Contactanos</button></li>
           <li><button className = {`material-icons ${styles.botonGoogle}`}>search</button></li>

@@ -2,5 +2,6 @@
     display: flex;
     flex-direction: column;
     gap: 7vw;
+    flex: 1;
     margin: 6vw 0;
 }

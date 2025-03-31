@@ -23,7 +23,7 @@
 }
 
 .frente {
-    background-image: url("../assets/card_background.jpg");
+    background-color: var(--color-quinario);
     background-size: cover;
     border-radius: 20px;
 }
@@ -42,7 +42,7 @@
 }
 
 .icono, .pregunta {
-    color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 .icono {

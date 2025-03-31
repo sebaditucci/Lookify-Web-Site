@@ -1,0 +1,49 @@
+.botones {
+    display: flex;
+    margin: 20px;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 30px;
+}
+
+.details {
+    border: solid var(--color-terciario) 1px;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.details:hover, .details[open] {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.filtros {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    position: absolute;
+    background-color: var(--color-secundario);
+    padding: 10px;
+    box-shadow: 0 0 20px -10px var(--color-terciario);
+    z-index: 5;
+}
+
+.botonFiltro, .botonView {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botonView:hover {
+    color: var(--color-primario);
+}
+
+.botonFiltro:hover {
+    color: var(--color-primario);
+    border-bottom: solid var(--color-primario) 1.5px;
+}
