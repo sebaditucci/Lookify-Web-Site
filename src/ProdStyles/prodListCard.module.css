@@ -1,0 +1,55 @@
+.cardActive {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    border: solid 3px var(--color-cuaternario);
+    transition: 0.3s;
+}
+
+.cardActive:hover .img {
+    transform: scale(0.9);
+}
+
+.cardActive:hover {
+    box-shadow: 0 0 10px -3px var(--color-terciario);
+}
+
+.img {
+    width: max(5.5rem, 10vw);
+    height: max(5.5rem, 10vw);
+    object-fit:contain;
+    transition-duration: 0.3s;
+}
+
+.imgContainer {
+    background-color: var(--color-cuaternario);
+    padding: 10px;
+    width: fit-content;
+    border-radius: 50px
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+.boton {
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    background-color: transparent;
+}
+
+.boton:hover {
+    color: var(--color-primario);
+}

@@ -8,8 +8,8 @@ export default function ProductoCard({imagen, nombre, precio, visibility}) {
             <img src = {imagen} alt = {nombre} title = {nombre} loading = "lazy" className = {styles.img}/>
         </div>
         <div className = {styles.datos}>
-        <h4>{nombre}</h4>
-        <p>{`$${precio}`}</p>
+          <h4>{nombre}</h4>
+          <p>{`$${precio}`}</p>
         </div>
     </div>
   )

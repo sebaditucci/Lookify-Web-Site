@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from '../ProdStyles/prodFilters.module.css'
 
-export default function ProdFilters({setFiltro}) {
+export default function ProdFilters({setFiltro, setOrden}) {
   console.log("ProdFilters renderizado");
   return (
     <div className = {styles.botones}>
-      <button className = {`material-icons ${styles.botonView}`}>grid_view</button>
-      <button className = {`material-icons ${styles.botonView}`}>view_list</button>
+      <button className = {`material-icons ${styles.botonView}`} onClick = {() => setOrden("grid")}>grid_view</button>
+      <button className = {`material-icons ${styles.botonView}`} onClick = {() => setOrden("flex")}>view_list</button>
       <details className = {styles.details}>
         <summary>Filtros</summary>
         <ul className = {styles.filtros}>

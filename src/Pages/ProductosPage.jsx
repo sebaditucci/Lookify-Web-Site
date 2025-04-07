@@ -7,12 +7,13 @@ import styles from '../ProdStyles/prodPage.module.css'
 
 export default function ProductosPage() {
   const [filtro, setFiltro] = useState(""); 
+  const [orden, setOrden] = useState("grid");
   return (
     <div className = {styles.page}>
       <Nav/>
       <section className = {styles.prodPage}>
-        <ProdFilters setFiltro = {setFiltro}/>
-        <ProdContent filtro = {filtro}/>
+        <ProdFilters setFiltro = {setFiltro} setOrden = {setOrden}/>
+        <ProdContent filtro = {filtro} orden = {orden}/>
       </section>
       <Footer/>
     </div>

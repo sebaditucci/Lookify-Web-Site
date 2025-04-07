@@ -1,9 +1,8 @@
 .botones {
     display: flex;
-    margin: 20px;
-    justify-content: flex-start;
     width: 100%;
     gap: 30px;
+    margin: 20px 0;
 }
 
 .details {
@@ -11,6 +10,7 @@
     padding: 8px;
     cursor: pointer;
     transition: 0.3s;
+    user-select: none;
 }
 
 .details:hover, .details[open] {
